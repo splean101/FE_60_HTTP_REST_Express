@@ -1,6 +1,10 @@
 import express from 'express';
 import { fileURLToPath } from 'url';
 import path from 'path';
+import swaggerUi from 'swagger-ui-express';
+import { createRequire } from 'node:module';
+
+
 
 const PORT = 3000;
 const app = express();
@@ -35,5 +39,11 @@ app.get('/product', (req, res) => {
 
   res.render('index', {title, price});
 });
+
+//-----4-----
+const require = createRequire(import.meta.url);
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(require('./swagger.json')));
+
+
 
 app.listen(PORT, () => console.log('Server is running...'));
