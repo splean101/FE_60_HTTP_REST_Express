@@ -1,0 +1,25 @@
+{
+  "name": "fe_60_http_rest_express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/splean101/FE_60_HTTP_REST_Express.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/splean101/FE_60_HTTP_REST_Express/issues"
+  },
+  "homepage": "https://github.com/splean101/FE_60_HTTP_REST_Express#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
